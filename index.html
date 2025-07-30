@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1 class="shop-name">SmartShop</h1> <p><i>Your Trusted 1:1 Grade Sneaker Store</i></p> </header>
+    <hr>
+
+    <nav class="top-navbar">
+        <a href="#">Home</a> |
+        <a href="#products">Products</a> | <a href="#order">Order</a> | <a href="#">Contact</a>
+    </nav>
+    <hr>
+
+    <main>
+        <section id="products" class="product-display"> <h2>Nike Air Max 1:1 Grade</h2>
+            <img src="Image/NIKE+AIR+MAX+EXCEE.avif" alt="Nike Air Max 1:1 Grade Sneaker" width="300"> <p>
+                <b>Price:</b> 
+                <s class="old-price">$350</s> <span class="current-price"><b>$280</b></span> <small>(20% OFF)</small>
+            </p> 
+            <p class="product-highlight">This sneakers are super comfy and look identical to the original Nike Air Max. Perfect for fashion and fitness.</p> 
+        </section>
+
+        <section class="features">
+            <h3>Key Features</h3> <ul>
+                <li>1:1 Premium Grade Quality</li>
+                <li>Imported Sole</li> <li>Comfort Fit Foam</li>
+                <li>Available Size: 40-45</li>
+            </ul>
+        </section>
+
+        <section class="specifications"> <h3>Product Specifications</h3>
+            <table border="1"> <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brand</td>
+                        <td>Nike (1:1 Replica)</td>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black & White</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Mesh + Rubber Sole</td>
+                    </tr>
+                    <tr>
+                        <td>Warranty</td>
+                        <td>7 Days Replacement</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="reviews"> <article>
+                <h3>Customer Reviews</h3> <p><b>Name: Rakib Islam</b></p> <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur natus facilis sed molestias excepturi".</p>
+                <video src="Asscet/Nike Air Max DN8s_ Unboxing & Review!.mp4" width="450" autoplay controls muted preload="metadata"></video> </article>
+        </section>
+
+        <section id="order" class="order-form-section"> <h2>Place Your Order</h2>
+            <form action="/submit-order" method="post">
+                <p> <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="fullname" value="" placeholder="Enter your full name">
+                </p>
+                <p>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phonenumber" value="" required placeholder="e.g., 01XXXXXXXXX">
+                </p>
+                <p>
+                    <label for="delivery-address">Delivery Address:</label> <br>
+                    <textarea name="address" id="delivery-address" cols="40" rows="4" required placeholder="Enter your full delivery address"></textarea>
+                </p>
+                <p>
+                    <label for="shoe-size">Shoe Size:</label>
+                    <select name="Size" id="shoe-size">
+                        <option value="">Select Size</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option> <option value="44">44</option> <option value="45">45</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Payment Method:</label><br>
+                    <input type="radio" id="cod" name="payment-method" value="cod" checked> <label for="cod">Cash On Delivery</label><br>
+                    <input type="radio" id="bkash" name="payment-method" value="bkash">
+                    <label for="bkash">Bkash</label>
+                </p>
+                <p>
+                    <button type="submit">Confirm Order</button>
+                    <button type="reset">Clear</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <hr>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 SmartShop. All rights reserved</p> </footer>
+
+</body>
+</html>
